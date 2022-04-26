@@ -62,7 +62,6 @@ header figure{
 }
 #portada{
     height: 300px;
-    background-color: blueviolet;
     background-image: url(../img/f1.jpeg);
     background-size: auto 1200px ;
     background-repeat: no-repeat;
@@ -82,7 +81,6 @@ header figure{
 
 main{
     width: 800px;
-    background-color: cadetblue;
     text-align: center;
     margin: auto auto ;
 }
