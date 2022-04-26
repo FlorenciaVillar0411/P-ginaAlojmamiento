@@ -1,0 +1,123 @@
+*{
+    margin: 0 0;
+    padding: 0 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+header, main, footer {display: block;}
+
+header{
+    width: 800px;
+    height:60px;
+    padding: 10px;
+    text-align: center;
+    margin: auto auto ;
+
+}
+
+nav{
+    text-align: right;
+    display: block;
+    padding: 10px;
+
+    
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    width: 110px;
+    display: inline-block;
+}
+
+nav ul li a{
+    display: block;
+    background-color: lightcoral;
+    color: darkred;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+nav ul li a:hover{
+    color: lightpink;
+    background-color: darkred;
+
+    
+}
+header figure{
+    width: 300px;
+    text-align: left;
+    float: left;
+}
+
+#imgHeader{
+    height: 60px;
+    
+}
+#portada{
+    height: 300px;
+    background-color: blueviolet;
+    background-image: url(../img/f1.jpeg);
+    background-size: auto 1200px ;
+    background-repeat: no-repeat;
+    margin: auto;
+    text-align: center;
+  
+}
+
+#textoPortada{
+    width: 800px;
+    text-align: center;
+    margin: auto auto ;
+    padding-top: 180px;
+    
+}
+
+
+main{
+    width: 800px;
+    background-color: cadetblue;
+    text-align: center;
+    margin: auto auto ;
+}
+
+h2{
+    text-align: center;
+    padding: 20px 0;
+}
+article{
+    width: 380px;
+    text-align: center;
+    border: 1px;
+    margin-right: 10px;
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+
+}
+input{
+    
+    color: lightpink;
+    background-color: darkred;
+    text-decoration: none;
+    padding: 5px;
+    text-transform: uppercase;
+    width: 100px;
+    margin: 0 auto;
+    border: 0px;
+}
+input:hover{
+    display: block;
+    background-color: lightcoral;
+}
+.imgPromo{
+    width: 380px;
+    height: 200px;
+}
