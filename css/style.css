@@ -10,7 +10,7 @@ header, main, footer {display: block;}
 
 header{
     width: 1200px;
-    height:60px;
+    height:150px;
     padding: 10px;
     text-align: center;
     margin: auto auto ;
@@ -20,7 +20,7 @@ header{
 nav{
     text-align: right;
     display: block;
-    padding: 10px;
+    padding-top: 50px;
 }
 
 nav ul{
@@ -28,7 +28,7 @@ nav ul{
 }
 
 nav ul li{
-    width: 110px;
+    width: 180px;
     display: inline-block;
 }
 
@@ -55,13 +55,14 @@ header figure{
 }
 
 #imgHeader{
-    height: 60px;
+    height: 150px;
     
 }
+
 #portada{
-    height: 400px;
+    height: 470px;
     background-image: url(../img/f1.jpeg);
-    background-size: auto 1200px ;
+    background-size: cover ;
     background-repeat: no-repeat;
     margin: auto;
     text-align: center;
@@ -72,7 +73,8 @@ header figure{
     width: 800px;
     text-align: center;
     margin: auto auto ;
-    padding-top: 260px;
+    padding-top: 330px;
+    color: white;
     
 }
 
@@ -84,18 +86,16 @@ main{
 
 h2{
     text-align: center;
-    padding: 10px 0;
-    padding-top: 40px;
-    margin: auto;
+    margin: 30px;
+    margin-top: 60px;
     font-family: 'Montserrat', sans-serif;
 }
+
 #promos article{
     width: 560px;
     display: inline-block;
     text-align: left;
- 
-    align-items: center;
-    margin: auto 20px;
+     margin: auto 20px;
 
 }
 #promos article figure{
@@ -104,9 +104,14 @@ h2{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-#promos article h3{
-    text-align: center;
+article h3{
+margin-top: 20px;
+margin-bottom: 10px;
 }
+#promos article input{
+    margin-left: 215px;
+}
+
 
 input, select{
     
@@ -116,10 +121,10 @@ input, select{
     padding: 5px;
     text-transform: uppercase;
     width: 100px;
-    margin: 0 auto;
     border: 0px;
 }
-input:hover, select:hover{
+
+input:hover, input[type=submit]:hover{
     background-color: lightcoral;
     color: darkred;
 }
@@ -128,24 +133,14 @@ input:hover, select:hover{
     display: inline-block;
     margin-top: 15px;
 }
-#promos input{
-    display: inline-block;
-    margin-top: 15px;
-    
-}
+
 .imgPromo{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-select{
-    width: 100%;
-    background-color: lightcoral;
-    color: darkred;
-    text-align: center;
-    text-decoration: none;
-}
+
 
 
 
@@ -180,7 +175,7 @@ form {
     width: 450px;
     display: grid;
     grid-template-columns: 200px 200px;
-    grid-template-rows: 50px 50px 50px;
+    grid-template-rows: 60px 60px 60px;
     margin: auto;
     margin-left: 400px;
 }
@@ -201,14 +196,47 @@ form input{
     background-color: lightcoral;
     color: darkred;
     text-align: center;
-    text-decoration: none;
 }
+
 form input[type=submit]{
     display: block;
     width: 100px;
     color: lightpink;
     background-color: darkred;
+    margin: 10px auto;
+  
 }
+select{
+    width: 390px;
+    background-color: lightcoral;
+    color: darkred;
+    text-align: center;
+    text-decoration: none;
+    margin: auto auto;
+}
+
+
+#tarifas article{
+    text-align: left;
+    display: inline-block;
+    width: 260px;
+    height: 300px;
+    margin: 15px;
+}
+#tarifas article figure{
+    width: 260px;
+    height: 280px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+#tarifas article input{
+    display: inline-block;
+    margin-left: 27px;
+}
+
+
+
 
 footer{
     background-color: rgb(146, 105, 105);
@@ -216,25 +244,29 @@ footer{
     width: 100%;
     height:60px;
     padding: 25px;
+    display: block;
+    padding-top: 50px;
+}
+
+footer ul{
+    list-style-type: none;
+    width: 1200px;
+    margin: auto auto;
     text-align: right;
 
 }
-#tarifas article{
+
+footer ul li{
+    display: inline-block;
+
+
+}
+footer ul li p{
     text-align: left;
     display: inline-block;
-    width: 280px;
-    height: 300px;
-    margin: 8px;
-}
-#tarifas article figure{
-    width: 280px;
-    height: 280px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-}
-#tarifas article h3{
-    text-align: left;
-
 }
 
+footer img{
+    display: block;
+    height: 30px;
+}

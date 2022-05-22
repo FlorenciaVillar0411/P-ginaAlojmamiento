@@ -20,10 +20,10 @@
         </figure>
         <nav>
             <ul>
-                <li>
+                <li class="left">
                     <a href="#promos">PROMOS</a>
                 </li>
-                <li>
+                <li class="left">
                     <a href="#fotos">FOTOS</a>
     
                 </li>
@@ -37,35 +37,35 @@
             </ul>
         </nav>
     </header>
-    <area class ="portada">
-        <div id="portada">
-            <div id="textoPortada">
-                <h1>Posada del mar</h1>   
-                <p>En la rambla de Carrasco, frente al mar, Posada del Mar ofrece servicios de excelencia y absoluta privacidad. Te esperamos con el mar como único testigo.</p>
+    <area>
+            <div id="portada">
+                <div id="textoPortada">
+                    <h1>Posada del mar</h1>
+                    <p>En la rambla de Carrasco, frente al mar, Posada del Mar ofrece servicios de excelencia y absoluta privacidad. Te esperamos con el mar como único testigo.</p>
+                
+                        </div>
             </div>
-
-        </div>
     </area>
     <main>
             <section id="promos">
                 <h2>PROMOS</h2>
             <article>
-                <h3>Estadía 3 noches</h3>
                 <figure>
-					<img class="imgPromo" src="img/fpromo1.jpeg" alt="" title=""/>
+                    <img class="imgPromo" src="img/fpromo1.jpeg" alt="" title=""/>
 				</figure >
                 <span>
+                    <h3>Estadía 3 noches</h3>
                     <p>3 noches con vista al mar para 4 personas. Cena para 4 de paella. Balcón con yacusi y desyuno incluido. </p>
                 </span>
                 <p class = "datos"><strong>Vigencia 22/03/22 al 22/03/23</strong></p>
                 <input type="button" value="AMPLIAR">
             </article><article>
-                <h3>Estadía 2 noches</h3>
                 <figure>
-					<img class="imgPromo" src="img/fpromo2.jpeg" alt="" title=""/>
+                    <img class="imgPromo" src="img/fpromo2.jpeg" alt="" title=""/>
 				</figure >
-
+                
                 <span>
+                    <h3>Estadía 2 noches</h3>
                     <p>2 noches con vista al mar para 2 personas. Axceso a parque acuático. Desyuno, almuerzo y cena incluidos.</p>
                 </span>
                 <p class = "datos"><strong>Vigencia 12/06/22 al 12/06/23</strong></p>
@@ -89,11 +89,11 @@
             <section id="tarifas">
                 <h2>TARIFAS</h2>
                 <article>
-                    <h3>2 personas</h3>
                     <figure>
                         <img class="imgPromo" src="img/t1.jpeg" alt="" title=""/>
                     </figure >
                     <span>
+                        <h3>2 personas</h3>
                         <p>Simple</p>
                         <p>Dormitorio en suite</p>
                         <p>Vista al mar</p>
@@ -104,13 +104,13 @@
                     <input type="button" value="AMPLIAR">
                 </article>
                 <article>
-                    <h3>3 personas</h3>
                     <figure>
                         <img class="imgPromo" src="img/t2.jpeg" alt="" title=""/>
                     </figure >
                     <span>
+                        <h3>3 personas</h3>
                         <p>Doble</p>
-                        <p>Dormitorio en suite y cama simple</p>
+                        <p>Dormitorio en suite</p>
                         <p>Vista al mar</p>
                         <p>máquina de café</p>
                         <p>8.9 - bueno</p>
@@ -119,11 +119,11 @@
                     <input type="button" value="AMPLIAR">
                 </article>
                 <article>
-                    <h3>4 personas</h3>
                     <figure>
                         <img class="imgPromo" src="img/t3.webp" alt="" title=""/>
                     </figure >
                     <span>
+                        <h3>4 personas</h3>
                         <p>Triple</p>
                         <p>Dormitorio en suite</p>
                         <p>cama doble y marinera</p>
@@ -134,11 +134,11 @@
                     <input type="button" value="AMPLIAR">
                 </article>
                 <article>
-                    <h3>4 personas</h3>
                     <figure>
                         <img class="imgPromo" src="img/t4.jpeg" alt="" title=""/>
                     </figure >
                     <span>
+                        <h3>4 personas</h3>
                         <p>2 baños</p>
                         <p>Doble dormitorio en suite</p>
                         <p>Vista al mar</p>
@@ -159,7 +159,7 @@
                     <input type="text" id="nombreYApellido" placeholder="ej. Juan Doe" required>
                 </fieldset>
                 <fieldset class="2" id="cdad">
-                    <label for="cdadPersonas">Cantidad de personas (*)</label>
+                    <label for="cdadPersonas">Cantidad personas (*)</label>
                     <input type="number" id="cdadPersonas" placeholder="ej. 3" required>
                 </fieldset>
                 <fieldset class ="3"id="tipoAlojamiento">
@@ -187,7 +187,25 @@
             
     </main>
     <footer>
-        <p>Seguinos</p>
+        <ul>
+            <li>
+                <figure>
+                    <img src="/img/booking.png">
+                </figure>            </li>
+            <li>
+                <figure>
+                    <img src="/img/airbnb.png">
+                </figure>
+            </li>
+            <li>
+                <p>Seguinos</p>
+            </li>
+            <li>
+                <figure>
+                    <img src="/img/instagram.png" href="instagram.com">
+                </figure>            </li>
+        </ul>
+       
     </footer>
 </body>
 </html>
