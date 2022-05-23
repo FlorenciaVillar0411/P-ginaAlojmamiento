@@ -1,27 +1,36 @@
 *{
     margin: 0 0;
     padding: 0 0;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
+/* a todo se le reseatean los valores y se le agrega una tipografía */
+
 html{
     scroll-behavior: smooth;
 }
+/* el scrolll es por los botones del nav, para que la transacción no sea brusca */
 header, main, footer {display: block;}
 
+
+
+/* ------HEADER--------- */
 header{
     width: 1200px;
     height:150px;
     padding: 10px;
     text-align: center;
     margin: auto auto ;
-
 }
+/* Los valores del header dictan el tamaño y la posición de su contenido */
 
+
+/* MENU */
 nav{
     text-align: right;
     display: block;
     padding-top: 50px;
 }
+/* Tamaño y posición general */
 
 nav ul{
     list-style-type: none;
@@ -39,25 +48,29 @@ nav ul li a{
     padding: 10px;
     text-align: center;
     text-decoration: none;
-    
 }
+/* estilo de cada botón */
 nav ul li a:hover{
     color: lightpink;
     background-color: darkred;
-
-    
 }
+/* Lo que sucede al pasar el mouse por arriba */
+
+/* LOGO */
 header figure{
     width: 300px;
     text-align: left;
     float: left;
 }
-
+/* Posición */
 header figure img{
     height: 150px;
     
 }
+/* Tamaño */
 
+
+/* -----FOTO PORTADA------- */
 #portada{
     height: 470px;
     background-image: url(../img/f1.jpeg);
@@ -66,24 +79,24 @@ header figure img{
     margin: auto;
     text-align: center;
     background-position: 0 -200px;
-  
 }
+/* Se posiciona  foto portada y se le da tamaño*/
 
 #textoPortada{
-    width: 800px;
+    width: 750px;
     text-align: center;
     margin: auto auto ;
     padding-top: 330px;
     color: white;
-    
 }
+/* Tamaño del texto y estilo, posición */
 
-
+/* ------CUERPO------- */
 main{
     width: 1200px;
     margin: auto auto ;
 }
-
+/* titulo de estilos de h2 y posición */
 h2{
     text-align: center;
     margin: 30px;
@@ -91,19 +104,27 @@ h2{
     font-family: 'Montserrat', sans-serif;
 }
 
+/* ------SECCION PROMOS------- */
 #promos article{
     width: 560px;
     display: inline-block;
     text-align: left;
-     margin: auto 20px;
-
+    margin: auto 20px;
 }
+/* Tamaño y posición a los articles */
 #promos article figure{
     width: 100%;
     height: 280px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+article figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Tamaño y posición imagenes */
 article h3{
 margin-top: 20px;
 margin-bottom: 10px;
@@ -111,8 +132,16 @@ margin-bottom: 10px;
 #promos article input{
     margin-left: 215px;
 }
+/* posición del botón */
 
+.datos{
+    text-align: left;
+    display: inline-block;
+    margin-top: 15px;
+}
+/* Info al lado del botón, se usa el mismo para los articles de tarifas*/
 
+/* -----BOTONES E INPUTS-------- */
 input, select{
     
     color: lightpink;
@@ -123,22 +152,14 @@ input, select{
     width: 100px;
     border: 0px;
 }
+/* estilo de los botones (todos) */
 
 input:hover, input[type=submit]:hover{
     background-color: lightcoral;
     color: darkred;
 }
-.datos{
-    text-align: left;
-    display: inline-block;
-    margin-top: 15px;
-}
 
-article figure img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+/* --------FOTOS GRILLA--------- */
 .grid {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -146,24 +167,51 @@ article figure img{
     grid-gap: 10px;
     padding: 10px;
     
-  }
-
+}
+/* info de la grid */
 section figure:nth-child(1){
     grid-column: 1;
     grid-row: 1 / 3;
 
 }
-
+/* foto 1 y 4,  las bajo a la segunda fil */
 section figure:nth-child(4){
     grid-column: 4;
     grid-row: 1 / 3;
 }
-
 .gridImg {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+/* covertura imagen */
+
+
+/* ----------TARIFAS ARTICULOS------- */
+#tarifas article{
+    text-align: left;
+    display: inline-block;
+    width: 266px;
+    height: 300px;
+    margin: 15px;
+}
+/* Tamaño y posición */
+#tarifas article figure{
+    width: 266px;
+    height: 280px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* tamño imagenes */
+#tarifas article input{
+    display: inline-block;
+    margin-left: 33px;
+}
+/* posición input */
+/* Algunos estilos usa los mismos que los articulos de promo */
+
+
+/* ----------FORMULARIO------- */
 
 form {
     width: 450px;
@@ -173,6 +221,8 @@ form {
     margin: auto;
     margin-left: 400px;
 }
+/* se usa grid para ordenar, los hijos son los fieldsets */
+
 form fieldset:nth-child(3){
     grid-column: 1 / 3;
     grid-row: 2;
@@ -191,15 +241,14 @@ form input{
     color: darkred;
     text-align: center;
 }
-
 form input[type=submit]{
     display: block;
     width: 100px;
     color: lightpink;
     background-color: darkred;
     margin: 10px auto;
-  
 }
+
 select{
     width: 390px;
     background-color: lightcoral;
@@ -209,28 +258,9 @@ select{
     margin: auto auto;
 }
 
+/* Se estilean los inputs, boton y select para encajar el tamaño deseado */
 
-#tarifas article{
-    text-align: left;
-    display: inline-block;
-    width: 266px;
-    height: 300px;
-    margin: 15px;
-}
-#tarifas article figure{
-    width: 266px;
-    height: 280px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    
-}
-#tarifas article input{
-    display: inline-block;
-    margin-left: 33px;
-}
-
-
-
+/* --------FOOTER------ */
 
 footer{
     background-color: rgb(146, 105, 105);
@@ -238,58 +268,38 @@ footer{
     width: 100%;
     height:60px;
     padding: 25px;
-    display: block;
-    padding-top: 50px;
     margin: auto auto;
-    text-align: right;
-    display: flex;
-
 }
 
 footer ul{
     list-style-type: none;
     width: 1200px;
     margin: auto auto;
-    text-align: right;
     display: flex;
-
-
 }
+/* Se usa flex para ponerlo en fila tanto en ul para las 2 il y en il para las cosas que tiene adentro*/
 
 footer ul li{
     display: flex;
- 
+
 }
-#f1{
-    justify-content: left;
-    align-items: left;
-}
+
 #f2{
-    justify-content: right;
-    align-items: right;
     margin-left: 900px;
-  
 }
-footer div figure{
-    padding: 5px;
+/* Por el órden se colocan a la derecha ya la izquierda pero se coloca con margin a la derecha porque el justify content lo deja al lado */
+footer ul li a{
+    text-decoration: none;
+    color: white;
+    display: flex;
 }
-
-footer ul li p{
-    text-align: left;
-    display: inline-block;
-    flex-wrap: nowrap;
-
-}
-
+/* Se coloca flex para que queden las cosas una al lado de la otra */
 footer img{
-    display: block;
     height: 30px;
     padding: 10px;    
-
 }
-
-footer ul li p{
-    display: block;
-    padding: 10px;  
-    margin-top: 5px;  
+footer ul li a p{
+    padding: 17px;
 }
+/* tamaño y posición de las cosas */
+

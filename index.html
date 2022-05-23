@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Obligatorio de diseño web - Universidad ORT 2022 - Florencia Villar 218320 ">
     <meta name="keywords" content="Diseño, página web, alojamiento, playa, educación">
-    <title>Florencia Villar</title>
+    <title>Florencia Villar 218320</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;0,300;0,600;1,200&display=swap');
-    </style>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!-- Se vincula la tipografía con los links que brinda google -->
    
 </head>
 <body>
+    <!-- -----HEADER------ -->
     <header>
+        <!-- ------LOGO----- -->
         <figure>
             <img src="img/beach.png"  alt="logo del alojamiento" title="logo">
         </figure>
+        <!-- Dentro del header ponemos el logo y un navegador con botones que vayan a las distintas secciones de la página -->
+        <!-- ------MENU------ -->
         <nav>
             <ul>
                 <li>
@@ -37,6 +41,9 @@
             </ul>
         </nav>
     </header>
+    
+    
+    <!-- ----IMAGEN Y TEXTO PORTADA------- -->
     <section>
         <div id="portada">
             <div id="textoPortada">
@@ -46,9 +53,16 @@
             </div>
         </div>
     </section>
+    <!-- La portada tiene un div contenedor que se usa como contenedor con imagen de fondo -->
     <main>
+        <!-- El main tiene medidas de ancho para toda la información diferentes de la foto de portada -->
+        
+        
+        <!-- -------PROMOS------- -->
+
         <section id="promos">
             <h2>Promos</h2>
+            <!-- titulo de la seccion -->
             <article>
                 <figure>
                     <img src="img/fpromo1.jpeg" alt="jacussi en balcón frente al mar" title="imagen promo"/>
@@ -57,6 +71,7 @@
                     <h3>Estadía 3 noches</h3>
                     <p>3 noches con vista al mar para 4 personas. Cena para 4 de paella. Balcón con yacusi y desyuno incluido. </p>
                 </span>
+                <!-- uso de span para la descripción de las promos -->
                 <p class = "datos"><strong>Vigencia 22/03/22 al 22/03/23</strong></p>
                 <input type="button" value="AMPLIAR">
             </article><article>
@@ -71,8 +86,12 @@
                 <p class = "datos"><strong>Vigencia 12/06/22 al 12/06/23</strong></p>
                 <input type="button" value="AMPLIAR">
             </article>
-            
+            <!-- dentro de la sección se colocan 2 articles con fotos, descripción y un input (botón) -->
             </section>
+
+
+            <!-- -------FOTOS GRID-------- -->
+
             <section id="fotos">
                 <h2>Fotos</h2>
                 <div class="grid">
@@ -83,8 +102,13 @@
                     <figure><img class="gridImg" src="img/grid3.webp" alt="foto costa con edificios" title="foto ubicacion"></figure>
                     <figure><img class="gridImg" src="img/grid2.jpeg" alt="camas de masaje frente al mar" title="masajes frente a playa"></figure>
                 </div>
-
+                <!-- La seccion de fotos tiene unicamente contenedores figure con fotos, al usar una grilla no es necesario identificarlos -->
             </section>
+
+
+
+            <!-- -------ARTICLES TARIFAS-------- -->
+
             <section id="tarifas">
                 <h2>Tarifas</h2>
                 <article>
@@ -99,6 +123,7 @@
                         <p>máquina de café</p>
                         <p>9.1 - excepcional</p>
                     </span>
+                    <!-- uso de span para contener la información de la habitacion -->
                     <p class = "datos"><strong>30 USD / noche</strong></p>
                     <input type="button" value="AMPLIAR">
                 </article>
@@ -136,7 +161,7 @@
                     <figure>
                         <img  src="img/t4.jpeg" alt="3 camas simples en dormitorio sencillo" title="habitacion 4"/>
                     </figure >
-                    <span>
+                    <span> 
                         <h3>4 personas | 2</h3>
                         <p>2 baños</p>
                         <p>Doble dormitorio en suite</p>
@@ -147,9 +172,14 @@
                     <p class = "datos"><strong>60 USD / noche</strong></p>
                     <input type="button" value="AMPLIAR">
                 </article>
-
-
+                <!-- La sección de tarifas tiene 4 articles similares a los de la sección promos -->
             </section>
+
+
+
+
+            <!-- ----------FORMULARIO RESERVA----------- -->
+
             <section id="reservas">
                 <h2>Reservas</h2>
                 <form>
@@ -181,10 +211,13 @@
                     <input type="submit" value="RESERVAR">
                 </fieldset>
             </form>
-
-            </section>
-            
+            <!-- La sección de reservas tiene únicamente un formulario delimitado con fieldsets para luego utilizar grid -->
+        </section>     
     </main>
+
+
+    <!-- -------FOOTER---------- -->
+
     <footer>
         <ul>
             <li id="f1">
@@ -196,11 +229,15 @@
                 </figure>
             </li>
             <li id="f2">
-                <p><strong>Seguinos!</strong</p>
-                <figure>
+                <a target="_blank" href="https://www.instagram.com/">
+                    <p><strong>Seguinos!</strong></p>
                     <img src="/img/instagram.png" alt="icono de instagram que funciona de botón" title="boton de instagram">
-                </figure>            </li>
+                </a>
+                <!-- Es un a porque no se puede vincular a una web un figure, pero si un a -->
+            </li>
         </ul>
+        <!-- Lista en footer para luego facilitar el posicionamiento de los elementos
+        las fotos deberían dirigir a links de otras páginas web al ser clickeados -->
        
     </footer>
 </body>
