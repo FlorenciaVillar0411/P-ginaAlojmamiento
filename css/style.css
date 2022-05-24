@@ -129,15 +129,16 @@ article h3{
 margin-top: 20px;
 margin-bottom: 10px;
 }
-#promos article input{
-    margin-left: 215px;
-}
-/* posición del botón */
+
 
 .datos{
     text-align: left;
     display: inline-block;
-    margin-top: 15px;
+}
+article div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 /* Info al lado del botón, se usa el mismo para los articles de tarifas*/
 
@@ -203,12 +204,6 @@ section figure:nth-child(4){
     margin-bottom: 10px;
 }
 /* tamño imagenes */
-#tarifas article input{
-    display: inline-block;
-    margin-left: 33px;
-}
-/* posición input */
-/* Algunos estilos usa los mismos que los articulos de promo */
 
 
 /* ----------FORMULARIO------- */
@@ -276,18 +271,15 @@ footer ul{
     width: 1200px;
     margin: auto auto;
     display: flex;
+    justify-content: space-between;
+
 }
 /* Se usa flex para ponerlo en fila tanto en ul para las 2 il y en il para las cosas que tiene adentro*/
 
 footer ul li{
     display: flex;
-
 }
 
-#f2{
-    margin-left: 900px;
-}
-/* Por el órden se colocan a la derecha ya la izquierda pero se coloca con margin a la derecha porque el justify content lo deja al lado */
 footer ul li a{
     text-decoration: none;
     color: white;
